@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400);
+
 body,html{
     margin:0;
     padding:0;
@@ -25,13 +26,20 @@ body,html{
   }
   
   .gradDynamic:after{
-    background:radial-gradient(circle,red,transparent);
+    background:radial-gradient(circle,#95ff06,transparent);
     background-size:400%;
     animation:colorSpin 30s linear infinite;
   }
   
   .gradDynamic:before{
-    background-color:yellow;
+    background-color:rgb(255, 0, 0);
+  }
+
+  @keyframes colorSpin{
+    25%{background-position:0 100%}
+    50%{background-position:100% 100%}
+    75%{background-position:100% 0}
+    100%{filter:hue-rotate(360deg)}
   }
 
 @-webkit-keyframes openTopLine {
@@ -131,7 +139,7 @@ body,html{
   font-size: 1.1em;
   font-family: "Roboto Slab";
   text-align: center;
-  color: #bdbdbd;
+  color: #f4f4f4;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -141,7 +149,7 @@ body,html{
 }
 .logo .line {
   height: 1px;
-  background: #bdbdbd;
+  background: #ffffff;
   display: inline-block;
   width: 27em;
 }
@@ -165,7 +173,7 @@ body,html{
   font-weight: 400;
   font-size: 2em;
   text-transform: uppercase;
-  text-shadow: 1px 1px 0px #212121, 2px 2px 0px #bdbdbd;
+  text-shadow: 1px 1px 0px #ffffff, 2px 2px 0px #ffffff;
   letter-spacing: 4px;
 }
 .logo .content .since {
@@ -186,7 +194,7 @@ body,html{
 }
 .logo .content .links a {
   display: inline-block;
-  color: #bdbdbd;
+  color: #f1f1f1;
   font-size: 1.25em;
   margin: 0.25em 0.2em 0;
   -webkit-transition: color 0.1s;
