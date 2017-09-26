@@ -1,7 +1,38 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400);
-body {
-  background: #212121;
-}
+body,html{
+    margin:0;
+    padding:0;
+	  height:100%;
+  }
+  
+  .box{
+    height:100%;
+    width:100%;
+  }
+  
+  .gradDynamic{
+    position:relative;
+  }
+  
+  .gradDynamic:after, .gradDynamic:before{
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    content:"";
+    z-index:-1;
+  }
+  
+  .gradDynamic:after{
+    background:radial-gradient(circle,red,transparent);
+    background-size:400%;
+    animation:colorSpin 30s linear infinite;
+  }
+  
+  .gradDynamic:before{
+    background-color:yellow;
+  }
 
 @-webkit-keyframes openTopLine {
   0% {
