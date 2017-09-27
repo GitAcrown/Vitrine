@@ -7,9 +7,9 @@
 body {
     font-family: Abel, Courier, monospace;
     text-transform: uppercase;
-    background-color: #000000;
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -41,9 +41,11 @@ h3 {
 }
 
 html {
-  background: #222;
   color: #fff;
   font-family: 'Abel', serif;
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
 blockquote {
@@ -118,6 +120,11 @@ a {
 a:hover {
     color: #f4c061;
 }
+
+.box{
+    height:100%;
+    width:100%;
+  }
 
 .gradDynamic{
     position:relative;
